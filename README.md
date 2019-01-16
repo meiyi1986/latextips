@@ -33,3 +33,20 @@ This is somewhere else where you want to refer to the referred section by `Secti
 ## Figures
 * Use \begin{figure}[!ht] for the best layout.
 * For printing a wide figure in a double-column template, use \begin{figure*}[!ht].
+* For printing subfigures in a figure, can use \usepackage{subfig} \usepackage{caption}, and use the \subfloat command. 
+
+An example: 
+
+\begin{figure}[!ht]
+
+\centering
+
+\subfloat[first caption.\label{fig:1a}]{\includegraphics[width=0.2\textwidth]{fig1a}}\hfill
+
+\subfloat[second caption.\label{fig:1b}] {\includegraphics[width=0.185\textwidth]{fig1b}}\hfill
+
+\subfloat[third caption.\label{fig:1c}]{\includegraphics[width=0.2\textwidth]{fig1c}}
+
+\caption{General caption.} \label{fig:1}
+
+\end{figure}
